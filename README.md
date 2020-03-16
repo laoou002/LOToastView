@@ -22,7 +22,7 @@ iOS简易小巧的短暂提示框，枚举动画类型：从顶部弹出、底�
 ```objc
 //短暂的消息提示
 #define Toast(msg)\
-[LOToastView showWithMsg:msg]
+[LOToastView showWithMsg:msg];
 ```
 
 ### 使用方法：
