@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqB-QQ-gg4">
+                                <rect key="frame" x="87" y="164" width="240" height="44"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="844-2m-22C"/>
+                                    <constraint firstAttribute="width" constant="240" id="Fc2-eJ-Gew"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="从顶部弹出">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SGg-A3-T7D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiL-pw-MOX">
+                                <rect key="frame" x="87" y="272" width="240" height="44"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LDF-Sg-hc4"/>
+                                    <constraint firstAttribute="height" constant="44" id="hEO-bC-j07"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="从中间渐显">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yey-YD-GOu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-hK-0fT">
+                                <rect key="frame" x="87" y="380" width="240" height="44"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="glD-j8-Hsz"/>
+                                    <constraint firstAttribute="height" constant="44" id="zLu-uq-pm8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="从底部弹出">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEP-uO-mbV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EqB-QQ-gg4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="2L0-JV-sM5"/>
+                            <constraint firstItem="AT9-hK-0fT" firstAttribute="centerX" secondItem="EqB-QQ-gg4" secondAttribute="centerX" id="5Ic-3s-ydN"/>
+                            <constraint firstItem="FiL-pw-MOX" firstAttribute="top" secondItem="EqB-QQ-gg4" secondAttribute="bottom" constant="64" id="R8L-6x-bs5"/>
+                            <constraint firstItem="AT9-hK-0fT" firstAttribute="top" secondItem="FiL-pw-MOX" secondAttribute="bottom" constant="64" id="Rkc-RJ-nIW"/>
+                            <constraint firstItem="EqB-QQ-gg4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ocy-va-SSQ"/>
+                            <constraint firstItem="FiL-pw-MOX" firstAttribute="centerX" secondItem="EqB-QQ-gg4" secondAttribute="centerX" id="ybl-81-95d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="120"/>
+        </scene>
+    </scenes>
+</document>
